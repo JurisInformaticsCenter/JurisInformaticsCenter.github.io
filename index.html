@@ -3,37 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Center for Juris-Informatics - データサイエンス共同利用基盤施設 | データサイエンス共同利用基盤施設</title>
+    <title>Center for Juris-Informatics</title>
+    <!-- Link to Bootstrap CSS for styling and responsiveness -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
     <style>
         .article {
-            font-family: Arial, sans-serif;
-            margin: 0 auto;
+            margin: 20px auto;
             max-width: 980px;
             padding: 40px;
             background-color: #f5f5f5;
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-        
-        .article h2 {
-            font-size: 28px;
-            font-weight: bold;
+		
+		.navbar{
+			margin: 20px auto;
+			max-width: 980px;
+		
+		}
+
+        .article h2, .article_body h3 {
             color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
         }
-        
-        .article_body {
-            margin-top: 30px;
-        }
-        
+
         .article_body p {
-            font-size: 18px;
             color: #34495e;
             line-height: 1.6;
             text-align: justify;
         }
-        
+
         .article_body img {
             width: 100%;
             height: auto;
@@ -41,22 +40,48 @@
             margin: 30px 0;
             border-radius: 5px;
         }
-        
-        .article_body h3 {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin: 30px 0 10px 0;
-        }
     </style>
 </head>
 <body>
+    <!-- Navigation bar (responsive with Bootstrap) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Brand name or logo here -->
+            <a class="navbar-brand" href="#">Juris-Informatics</a>
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#member">Member</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#event">Event</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publication">Publication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#announcement">Announcement</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Article Content -->
     <div class="article">
         <h2>Introducing Juris-Informatics: Pioneering a New Academic Field and Establishing a Global Research Center</h2>
         <div class="article_body">
-            <p>At the forefront of artificial intelligence (AI) and legal research, the Center for Juris-Informatics aims to create a new academic field—"juris-informatics"—by integrating the areas of "Law supported by AI" and "Law control of AI." Our goal is to build a global research center focused on juris-informatics, through the development of relevant databases and the exploration of their applications.</p>
-            <img src="https://github.com/JurisInformaticsCenter/JurisInformaticsCenter.github.io/blob/d8354ba6e2ec660050ce268f547d7841c6742619/en_HP%E7%94%A8%E7%A0%94%E7%A9%B6%E6%94%AF%E6%8F%B4%E6%B4%BB%E5%8B%95%E3%81%AE%E5%9B%B3.png?raw=true" alt="" class="alignnone size-full wp-image-9491">
-            <h3>Our Team Members</h3>
+            <p>At the forefront of artificial intelligence (AI) and legal research...</p>
+            <img src="https://github.com/JurisInformaticsCenter/JurisInformaticsCenter.github.io/blob/d8354ba6e2ec660050ce268f547d7841c6742619/en_HP%E7%94%A8%E7%A0%94%E7%A9%B6%E6%94%AF%E6%8F%B4%E6%B4%BB%E5%8B%95%E3%81%AE%E5%9B%B3.png?raw=true" alt="Research Image">
+            <h3>Members</h3>
             <p>
                 <a target="_blank" href="https://researchmap.jp/ksatoh"><strong>Ken Satoh</strong></a> (Director)<br>
                 <a target="_blank" href="https://researchmap.jp/tsushima">Kanae Tsushima</a><br>
@@ -78,7 +103,16 @@
                 <a target="_blank" href="https://researchmap.jp/read0175364">Tomoumi Nishimura</a> (Kyushu University)<br>
                 <a target="_blank" href="https://www.hec.edu/en/faculty-research/faculty-directory/faculty-member/restrepoamariles-david">David Restrepo Amariles</a> (HEC, France)
             </p>
-        </div><!-- // article_body -->
+        </div>
     </div>
+
+	<footer class="bg-dark text-center py-3">
+	<p class="text-white">&copy;2024 All rights reserved.</p>
+	<a class="text-white" href="https://jurisinformaticscenter.github.io/">Juris-Informatics Center home page</a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
